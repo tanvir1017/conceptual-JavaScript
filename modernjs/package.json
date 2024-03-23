@@ -1,0 +1,14 @@
+{
+  "name": "modernjs",
+  "version": "1.0.0",
+  "description": "> Every variable or state can be truthy without six condition. A variable or any state can be falsy for those six reason or type. They are ;\r >\r > - Undefined\r > - False\r > - \"\" (Empty string)\r > - undefined\r > - null\r > - NaN\r > - 0",
+  "main": "practice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4"
+  }
+}
