@@ -3,11 +3,10 @@
  */
 function counter() {
   var count = 0;
-  function incrementCounter() {
+  return function incrementCounter() {
     count++;
     return count;
-  }
-  return incrementCounter;
+  };
 }
 
-console.log(count);
+console.log(counter()());

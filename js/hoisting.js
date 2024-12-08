@@ -1,5 +1,6 @@
 greeting();
-console.log(x);
+v; // greeting ~ greeting
+console.log(x); // undefined
 
 var x = 7;
 

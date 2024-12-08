@@ -1,25 +1,10 @@
-var n = 2;
-function square(num) {
-  var ans = num * num;
-  return ans;
+const square = 2; // Memory allocation phase it will be placed as undefined
+
+// fun will create a new execution phase for every function and in memory allocation phase it will just print all the code inside function as it is
+function squareFn(n) {
+  const ans = n * n;
+  return ans; // returns tells the means that remove the function from execution context
 }
 
-var square2 = square(n);
-var square3 = square(4);
-
-/**
- * Function that describe jsdoc
- * @param {string} title - the title of the book
- * @param {object} author - author info an object
- * @returns {title, author} title author - as an object
- */
-function Book(title, author) {
-  return { title, author };
-}
-
-const bookFunc = new Book("The jsDocBook", {
-  name: "The elegant of javascript",
-  writer: "Someone",
-});
-
-console.log(bookFunc);
+const getSquare1 = squareFn(square); // when a function invoked then it will create another function execution phase for the invokation and everything will be work as it should be
+const square2 = squareFn(4);
